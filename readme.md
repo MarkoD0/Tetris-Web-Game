@@ -4,7 +4,7 @@
 Developed as a project for the **Web Design** course at the *Faculty of Electrical Engineering (ETF), University of Belgrade*.
 
 ## 🔗 Live Preview
-[**Click here to play Tetris in your browser**](https://yourusername.github.io/your-repo-name/)
+[**Click here to play Tetris in your browser**](https://markod0.github.io/Tetris-Web-Game/)
 
 ## 📖 Project Overview
 The primary goal of this project was to create a fully functional and intuitive user interface while maintaining a clean separation of logic (JavaScript) and styling (CSS), as mandated by the course requirements.
