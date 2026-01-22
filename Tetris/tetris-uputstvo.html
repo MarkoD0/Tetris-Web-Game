@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tetris-uputstvo</title>
+        
+        <link rel="stylesheet" href="tetris-dodatno/bootstrap.css">
+        <script src="tetris-dodatno/bootstrap.js"></script>
+        <script src="tetris-dodatno/jquery-3.7.1.min.js"></script>
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="jquery-3.6.4.min.js"></script>-->
+        <link rel="stylesheet" type="text/css" href="stilovi-uputstvo.css">
+        <script src="skripta.js"></script>
+    </head>
+    <body>
+        <h1>Tetris</h1>
+
+        <div id="uputstvo">
+            <h3>Uputstvo za igru</h3>
+            <p>
+                U igri tetris oblici padaju i cilj je da se sto duze vreme ne nagomilaju do vrha, ukoliko se to desi igra je zavrsena.<br>
+                Igrac moze da pomera oblike levo desno kao i da ih rotira odgovarajucim strlicama.<br>
+                Kada oblik dodirne neki drugi oblik ili se spusti do dna ostaje tu i ne moze se vise pomerati.<br>
+                Kada se jedan ceo red popuni blokovima, red se brise i svi blokovi iznad se spustaju za jedno mesto dole.<br>
+                Postoji nekoliko vrsta oblika. I moguce je izabrati oblike koje igrac zeli da ima u svojoj igri.<br>
+                Postoje i 3 tezine od kojih zavisi pocetna brzina padanja oblika.<br>
+                Igru je moguce pauzirati i resetovati u bilo kom trenutku.<br>
+                Korisniku su vidljivi poeni koje je ostvario nivo i pod nivo na kome, od kojih direktno zavisi brzina padanja oblika, kao i sledeci oblik koji dolazi.<br>
+                Nakon zavrsene igre korisnik moze uneti svoje ime kako bi sacuvao rezultat u listi najboljih rezultata.<br><br><br>
+                <b>Komande:</b>
+                <ul>
+                    <li>Levo: Strelica levo</li>
+                    <li>Desno: Strelica desno</li>
+                    <li>Rotacija: Strelica gore</li>
+                    <li>Brzo padanje: Strelica dole</li>
+                </ul>
+            </p>
+        </div>
+
+        <div id="oblici_i_tezina">
+            <h3>Odabir oblika</h3>
+            <table>
+                <tr>
+                    <td><img src="tetris-dodatno/slika1.png" onclick="toglujOblik(1)" id="oblik1"></td>
+                    <td><img src="tetris-dodatno/slika2.png" onclick="toglujOblik(2)" id="oblik2"></td>
+                    <td><img src="tetris-dodatno/slika3.png" onclick="toglujOblik(3)" id="oblik3"></td>
+                </tr>
+                <tr>
+                    <td><img src="tetris-dodatno/slika4.png" onclick="toglujOblik(4)" id="oblik4"></td>
+                    <td><img src="tetris-dodatno/slika5.png" onclick="toglujOblik(5)" id="oblik5"></td>
+                </tr>
+                <tr>
+                    <td><img src="tetris-dodatno/slika6.png" onclick="toglujOblik(6)" id="oblik6"></td>
+                    <td><img src="tetris-dodatno/slika7.png" onclick="toglujOblik(7)" id="oblik7"></td>
+                </tr>
+            </table>
+
+            <h3>Odabir pocetne tezine</h3>
+            <form>
+                <input type="range" min="1" max="3" oninput="uzmiTezinu(this.value)">
+                <span id="tezina"><b>srednje</b></span>
+            </form>
+        </div>
+
+        <div id="opcije">
+            <form>
+                <a href="tetris-igra.html">
+                    <input type="button" id="dugme_zapocni_igru" value="Zapocni igru">
+                </a>
+                <a href="tetris-rezultati.html">
+                    <input type="button" id="dugme_vidi_rezultate" value="Vidi rezultate">
+                </a>
+            </form>
+        </div>
+    </body>
+</html>

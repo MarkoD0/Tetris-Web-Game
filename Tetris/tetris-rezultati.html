@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tetris-uputstvo</title>
+        
+        <link rel="stylesheet" href="tetris-dodatno/bootstrap.css">
+        <script src="tetris-dodatno/bootstrap.js"></script>
+        <script src="tetris-dodatno/jquery-3.7.1.min.js"></script>
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="jquery-3.6.4.min.js"></script>-->
+        <link rel="stylesheet" type="text/css" href="stilovi-rezultati.css">
+        <script src="skripta.js"></script>
+    </head>
+    <body>
+        <h1>
+            Rezultati
+        </h1>
+
+        <div id="leviDeo">
+            <div id="igracPodaci">
+                <button id="imeDugme">Ime:&nbsp;&nbsp; <span id="ime_rezultat"></span></button>
+                <button id="rezultatDugme">Rezultat:&nbsp;&nbsp; <span id="rezultat_rezultat"></span></button>
+                <button id="nivoDugme">Finalni nivo:&nbsp;&nbsp; <span id="nivo_rezultat"></span></button>
+                <button id="podnivoDugme">Finalni pod-nivo:&nbsp;&nbsp; <span id="podnivo_rezultat"></span></button>
+                <button id="obliciDugme">Korisceni svi oblici:&nbsp;&nbsp; <span id="oblici_rezultat"></span></button>
+            </div>
+            <form>
+                <a href="tetris-uputstvo.html">
+                    <input type="button" id="dugme_na_uputstvo" value="Nazad na uputstvo">
+                </a>
+            </form>
+        </div>
+
+        <div id="desniDeo">
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Ime</th>
+                        <th>Poeni</th>
+                        <th>Nivo</th>
+                        <th>Korisceni svi oblici</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="red0">
+                        <td id="ime0"></td>
+                        <td id="poeni0"></td>
+                        <td id="tezina0"></td>
+                        <td id="oblici0"></td>
+                    </tr>
+                    <tr id="red1">
+                        <td id="ime1"></td>
+                        <td id="poeni1"></td>
+                        <td id="tezina1"></td>
+                        <td id="oblici1"></td>
+                    </tr>
+                    <tr id="red2">
+                        <td id="ime2"></td>
+                        <td id="poeni2"></td>
+                        <td id="tezina2"></td>
+                        <td id="oblici2"></td>
+                    </tr>
+                    <tr id="red3">
+                        <td id="ime3"></td>
+                        <td id="poeni3"></td>
+                        <td id="tezina3"></td>
+                        <td id="oblici3"></td>
+                    </tr>
+                    <tr id="red4">
+                        <td id="ime4"></td>
+                        <td id="poeni4"></td>
+                        <td id="tezina4"></td>
+                        <td id="oblici4"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <form>
+                <input type="button" id="dugme_resetuj_rezultate" value="Resetuj rezultate">
+            </form>
+        </div>
+    </body>
+</html>

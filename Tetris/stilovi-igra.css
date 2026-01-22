@@ -1,0 +1,138 @@
+body {
+    background: linear-gradient(to bottom, #ffffff, #067676);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 0;
+    margin: 0;
+    gap: 0px;
+}
+
+#dugmici {
+    grid-column: 1 / span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#dugmici form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#pauza {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background-color: mediumblue;
+    border: 5px solid transparent;
+}
+
+#restart {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background-color: red;
+    border: 5px solid transparent;
+}
+
+#nazad {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background-color: orange;
+    border: 5px solid transparent;
+}
+
+#rezultati {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background-color: springgreen;
+    border: 5px solid transparent;
+}
+
+#pauza:hover {
+    border-color: white;
+}
+
+#restart:hover {
+    border-color: white;
+}
+
+#nazad:hover {
+    border-color: white;
+}
+
+#rezultati:hover {
+    border-color: white;
+}
+
+
+#igra {
+    grid-column: 5 / span 4;
+    grid-row: 1 / span 12;
+    display: block;
+    margin: auto; /* This centers the canvas horizontally and vertically */
+    border: 2px solid black;
+    /* Remove width: 90% and height: 100% - let JS control it */
+}
+
+#skor {
+    grid-column: 9 / span 4;
+    grid-row: 1 / span 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    height: 100vh;
+}
+
+#skor button {
+    cursor: default;
+    pointer-events: none;    
+    font-weight: bold;
+    font-size: 25px;
+    padding: 20px 50px;
+    border-radius: 100px;
+    background-color: antiquewhite;
+}
+
+.sakriveno {
+    display: none;
+}
+
+#poruka {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    background-color: black;
+    padding: 25px;
+    border-radius: 30px;
+    text-align: center;
+    z-index: 9999;
+}
+
+#poruka form input {
+    margin-top: 20px;
+}
+
+#sacuvaj {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background-color: green;
+}

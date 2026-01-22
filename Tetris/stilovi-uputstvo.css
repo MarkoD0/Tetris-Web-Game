@@ -1,0 +1,85 @@
+body {
+    background: linear-gradient(to bottom, #ffffff, #067676);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+h1 {
+    grid-column: 1 / span 2;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#uputstvo {
+    grid-column: 1 / span 1;
+}
+
+#oblici_i_tezina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 2 / span 1;
+}
+
+#oblici_i_tezina img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: 5px solid transparent;
+}
+
+#oblici_i_tezina img:hover {
+    border-color: red;
+}
+
+#oblici_i_tezina img.clicked {
+    filter: blur(5px);
+}
+
+#oblici_i_tezina table {
+    margin-bottom: 40px;
+}
+
+#opcije {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1 / span 2;
+}
+
+#dugme_zapocni_igru {
+    font-weight: bold;
+    font-size: 25px;
+    padding: 20px 40px;
+    border-radius: 30px;
+    background-color: mediumblue;
+    border: 5px solid transparent;
+}
+
+#dugme_vidi_rezultate {
+    font-weight: bold;
+    font-size: 25px;
+    padding: 20px 40px;
+    border-radius: 30px;
+    background-color: springgreen;
+    border: 5px solid transparent;
+}
+
+#dugme_zapocni_igru:hover {
+    border-color: white;
+}
+
+#dugme_vidi_rezultate:hover {
+    border-color: white;
+}
